@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Delights — Artisan Cake Studio</title>
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts: Fraunces (display) + DM Mono + Lato -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&family=DM+Mono:wght@400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#home">
+        <span class="brand-icon">✦</span>
+        <span class="brand-text">Sweet<em>Delights</em></span>
+      </a>
+
+      <!-- Hamburger -->
+      <button class="navbar-toggler custom-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-lg-1 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cakes">Cakes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#custom">Custom Order</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-order-nav" href="#custom">
+              <i class="bi bi-bag-heart me-1"></i>Order Now
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════ -->
+  <section id="home" class="hero-section">
+    <!-- Decorative gold lines -->
+    <div class="hero-lines" aria-hidden="true">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+    </div>
+
+    <div class="container">
+      <div class="row min-vh-100 align-items-center">
+        <div class="col-lg-6 hero-left">
+          <p class="hero-overline"><span class="overline-tick"></span>Artisan Cake Studio · Since 2015</p>
+          <h1 class="hero-headline">
+            Delicious Cakes<br/>
+            for <em>Every</em><br/>
+            Occasion.
+          </h1>
+          <p class="hero-sub">
+            Handcrafted with love, flavored to perfection.
+            From intimate birthdays to grand weddings — we bake the centrepiece of your celebration.
+          </p>
+          <div class="hero-actions">
+            <a href="#cakes" class="btn btn-hero-primary">
+              Explore Cakes <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+            <a href="#custom" class="btn btn-hero-ghost">
+              Custom Order
+            </a>
+          </div>
+
+          <!-- Stats bar -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-n">500+</span>
+              <span class="stat-l">Cakes Made</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat-item">
+              <span class="stat-n">50+</span>
+              <span class="stat-l">Flavours</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat-item">
+              <span class="stat-n">4.9★</span>
+              <span class="stat-l">Avg Rating</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero image collage -->
+        <div class="col-lg-6 hero-right d-none d-lg-flex">
+          <div class="hero-collage">
+            <div class="collage-main">
+              <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80"
+                alt="Beautiful layered cake" />
+              <div class="collage-tag">
+                <i class="bi bi-star-fill"></i> Bestseller
+              </div>
+            </div>
+            <div class="collage-side">
+              <div class="collage-sm">
+                <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=400&q=80"
+                  alt="Wedding cake" />
+              </div>
+              <div class="collage-sm">
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&q=80"
+                  alt="Birthday cake" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll nudge -->
+    <div class="scroll-nudge">
+      <span>Scroll</span>
+      <div class="nudge-bar"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CAKE CATEGORIES
+  ═══════════════════════════════════════ -->
+  <section id="cakes" class="cakes-section">
+    <div class="container">
+
+      <!-- Section header -->
+      <div class="section-header reveal">
+        <p class="section-overline">Our Specialities</p>
+        <h2 class="section-title">Cakes for Every <em>Celebration</em></h2>
+        <p class="section-sub">Click a category to highlight it. Every cake is baked fresh, delivered on time.</p>
+      </div>
+
+      <!-- Category grid -->
+      <div class="row g-4" id="categoryGrid">
+
+        <!-- Birthday -->
+        <div class="col-sm-6 col-xl-3 reveal">
+          <div class="cake-card" data-category="birthday" onclick="selectCategory(this)">
+            <div class="cake-img-wrap">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80"
+                alt="Birthday Cakes" class="cake-img" />
+              <div class="cake-badge">🎉</div>
+              <div class="cake-overlay">
+                <button class="btn btn-overlay" onclick="openCustomModal('Birthday'); return false;">
+                  Customize & Order
+                </button>
+              </div>
+            </div>
+            <div class="cake-body">
+              <span class="cake-tag">Birthday Cakes</span>
+              <h5 class="cake-name">Celebrate Big</h5>
+              <p class="cake-desc">Colourful, sprinkled, and bursting with joy — the perfect birthday centrepiece.</p>
+              <div class="cake-footer">
+                <span class="cake-price">From ₹799</span>
+                <button class="btn btn-card-cta" onclick="openCustomModal('Birthday')">
+                  Order <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wedding -->
+        <div class="col-sm-6 col-xl-3 reveal">
+          <div class="cake-card" data-category="wedding" onclick="selectCategory(this)">
+            <div class="cake-img-wrap">
+              <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&q=80"
+                alt="Wedding Cakes" class="cake-img" />
+              <div class="cake-badge">💍</div>
+              <div class="cake-overlay">
+                <button class="btn btn-overlay" onclick="openCustomModal('Wedding'); return false;">
+                  Customize & Order
+                </button>
+              </div>
+            </div>
+            <div class="cake-body">
+              <span class="cake-tag">Wedding Cakes</span>
+              <h5 class="cake-name">Eternal Elegance</h5>
+              <p class="cake-desc">Tiered masterpieces draped in fondant florals for your most special day.</p>
+              <div class="cake-footer">
+                <span class="cake-price">From ₹2,499</span>
+                <button class="btn btn-card-cta" onclick="openCustomModal('Wedding')">
+                  Order <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Anniversary -->
+        <div class="col-sm-6 col-xl-3 reveal">
+          <div class="cake-card" data-category="anniversary" onclick="selectCategory(this)">
+            <div class="cake-img-wrap">
+              <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=600&q=80"
+                alt="Anniversary Cakes" class="cake-img" />
+              <div class="cake-badge">❤️</div>
+              <div class="cake-overlay">
+                <button class="btn btn-overlay" onclick="openCustomModal('Anniversary'); return false;">
+                  Customize & Order
+                </button>
+              </div>
+            </div>
+            <div class="cake-body">
+              <span class="cake-tag">Anniversary Cakes</span>
+              <h5 class="cake-name">Love Story</h5>
+              <p class="cake-desc">Romantic roses, gold leaf, and heartfelt inscriptions on every slice.</p>
+              <div class="cake-footer">
+                <span class="cake-price">From ₹999</span>
+                <button class="btn btn-card-cta" onclick="openCustomModal('Anniversary')">
+                  Order <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Face Cakes -->
+        <div class="col-sm-6 col-xl-3 reveal">
+          <div class="cake-card" data-category="face" onclick="selectCategory(this)">
+            <div class="cake-img-wrap">
+              <img src="https://images.unsplash.com/photo-1590080876012-5d6698b2b00d?w=600&q=80"
+                alt="Face Cakes" class="cake-img" />
+              <div class="cake-badge">🎭</div>
+              <div class="cake-overlay">
+                <button class="btn btn-overlay" onclick="openCustomModal('Face Cake'); return false;">
+                  Customize & Order
+                </button>
+              </div>
+            </div>
+            <div class="cake-body">
+              <span class="cake-tag">Face Cakes</span>
+              <h5 class="cake-name">Edible Portrait</h5>
+              <p class="cake-desc">Send us a photo — we recreate it in stunning edible detail on your cake.</p>
+              <div class="cake-footer">
+                <span class="cake-price">From ₹1,299</span>
+                <button class="btn btn-card-cta" onclick="openCustomModal('Face Cake')">
+                  Order <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FEATURED / PRODUCT LISTING
+  ═══════════════════════════════════════ -->
+  <section id="products" class="products-section">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <p class="section-overline">This Week's Picks</p>
+        <h2 class="section-title">Fan <em>Favourites</em></h2>
+      </div>
+
+      <div class="row g-4" id="productGrid">
+
+        <div class="col-md-4 reveal">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=500&q=80"
+                alt="Chocolate Truffle Cake" />
+              <span class="product-label">Bestseller</span>
+            </div>
+            <div class="product-body">
+              <p class="product-flavor">Chocolate Truffle</p>
+              <div class="product-row">
+                <span class="product-price">₹1,199 <small>/ 1kg</small></span>
+                <div class="product-rating">★★★★★ <span>5.0</span></div>
+              </div>
+              <button class="btn btn-product w-100 mt-2" onclick="openCustomModal('Birthday')">
+                <i class="bi bi-bag-plus me-1"></i>Add to Order
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 reveal">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?w=500&q=80"
+                alt="Red Velvet Cake" />
+              <span class="product-label new-label">New</span>
+            </div>
+            <div class="product-body">
+              <p class="product-flavor">Classic Red Velvet</p>
+              <div class="product-row">
+                <span class="product-price">₹1,099 <small>/ 1kg</small></span>
+                <div class="product-rating">★★★★★ <span>4.9</span></div>
+              </div>
+              <button class="btn btn-product w-100 mt-2" onclick="openCustomModal('Anniversary')">
+                <i class="bi bi-bag-plus me-1"></i>Add to Order
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 reveal">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1562777717-dc6984f65a63?w=500&q=80"
+                alt="Vanilla Drip Cake" />
+            </div>
+            <div class="product-body">
+              <p class="product-flavor">Vanilla Drip Cake</p>
+              <div class="product-row">
+                <span class="product-price">₹999 <small>/ 1kg</small></span>
+                <div class="product-rating">★★★★☆ <span>4.7</span></div>
+              </div>
+              <button class="btn btn-product w-100 mt-2" onclick="openCustomModal('Birthday')">
+                <i class="bi bi-bag-plus me-1"></i>Add to Order
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CUSTOM ORDER SECTION
+  ═══════════════════════════════════════ -->
+  <section id="custom" class="custom-section">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+
+        <!-- Left info -->
+        <div class="col-lg-5 reveal">
+          <p class="section-overline">Build Your Dream Cake</p>
+          <h2 class="section-title">Custom <em>Order</em></h2>
+          <p class="custom-desc">
+            Choose your flavour, set the size, pick a theme — and we'll handle the rest. Every cake is handcrafted to your vision.
+          </p>
+          <ul class="custom-features">
+            <li><i class="bi bi-check-circle-fill"></i> 12+ premium flavours</li>
+            <li><i class="bi bi-check-circle-fill"></i> Custom messages & photos</li>
+            <li><i class="bi bi-check-circle-fill"></i> Same-day delivery available</li>
+            <li><i class="bi bi-check-circle-fill"></i> 100% fresh ingredients</li>
+          </ul>
+          <!-- Order Summary Box -->
+          <div class="order-summary" id="orderSummary" style="display:none;">
+            <p class="summary-title"><i class="bi bi-receipt me-2"></i>Order Preview</p>
+            <div id="summaryContent"></div>
+            <p class="summary-total" id="summaryTotal"></p>
+          </div>
+        </div>
+
+        <!-- Custom form -->
+        <div class="col-lg-7 reveal">
+          <div class="custom-form-card">
+            <h4 class="form-heading">Configure Your Cake</h4>
+
+            <form id="customForm">
+              <div class="row g-3">
+
+                <!-- Occasion -->
+                <div class="col-12">
+                  <label class="form-label-custom" for="occasion">Occasion *</label>
+                  <select id="occasion" class="form-select custom-select">
+                    <option value="">— Choose Occasion —</option>
+                    <option value="Birthday">🎉 Birthday</option>
+                    <option value="Wedding">💍 Wedding</option>
+                    <option value="Anniversary">❤️ Anniversary</option>
+                    <option value="Face Cake">🎭 Face Cake</option>
+                    <option value="Corporate">🏢 Corporate</option>
+                    <option value="Other">✨ Other</option>
+                  </select>
+                  <div class="err-msg" id="occasionErr">Please select an occasion.</div>
+                </div>
+
+                <!-- Flavour -->
+                <div class="col-md-6">
+                  <label class="form-label-custom" for="flavor">Flavour *</label>
+                  <select id="flavor" class="form-select custom-select" onchange="updateSummary()">
+                    <option value="">— Choose Flavour —</option>
+                    <option value="Chocolate Truffle">Chocolate Truffle</option>
+                    <option value="Classic Vanilla">Classic Vanilla</option>
+                    <option value="Red Velvet">Red Velvet</option>
+                    <option value="Butterscotch">Butterscotch</option>
+                    <option value="Mango Delight">Mango Delight</option>
+                    <option value="Strawberry Cream">Strawberry Cream</option>
+                    <option value="Black Forest">Black Forest</option>
+                    <option value="Lemon Zest">Lemon Zest</option>
+                  </select>
+                  <div class="err-msg" id="flavorErr">Please choose a flavour.</div>
+                </div>
+
+                <!-- Size -->
+                <div class="col-md-6">
+                  <label class="form-label-custom" for="cakeSize">Size *</label>
+                  <select id="cakeSize" class="form-select custom-select" onchange="updateSummary()">
+                    <option value="">— Choose Size —</option>
+                    <option value="0.5kg" data-price="599">0.5 kg — ₹599</option>
+                    <option value="1kg"   data-price="999">1 kg — ₹999</option>
+                    <option value="1.5kg" data-price="1399">1.5 kg — ₹1,399</option>
+                    <option value="2kg"   data-price="1699">2 kg — ₹1,699</option>
+                    <option value="3kg"   data-price="2399">3 kg — ₹2,399</option>
+                    <option value="4kg"   data-price="2999">4 kg — ₹2,999</option>
+                  </select>
+                  <div class="err-msg" id="sizeErr">Please choose a size.</div>
+                </div>
+
+                <!-- Icing type -->
+                <div class="col-md-6">
+                  <label class="form-label-custom" for="icing">Icing Type</label>
+                  <select id="icing" class="form-select custom-select" onchange="updateSummary()">
+                    <option value="Buttercream">Buttercream (default)</option>
+                    <option value="Fondant">Fondant</option>
+                    <option value="Ganache">Chocolate Ganache</option>
+                    <option value="Whipped Cream">Whipped Cream</option>
+                  </select>
+                </div>
+
+                <!-- Delivery date -->
+                <div class="col-md-6">
+                  <label class="form-label-custom" for="delivDate">Delivery Date *</label>
+                  <input type="date" id="delivDate" class="form-control custom-input" />
+                  <div class="err-msg" id="dateErr">Please select a delivery date.</div>
+                </div>
+
+                <!-- Cake message -->
+                <div class="col-12">
+                  <label class="form-label-custom" for="cakeMsg">Message on Cake</label>
+                  <input type="text" id="cakeMsg" class="form-control custom-input"
+                    placeholder='e.g. "Happy Birthday Alex! 🎂"'
+                    maxlength="40" oninput="updateSummary()" />
+                  <small class="char-count" id="charCount">0 / 40 characters</small>
+                </div>
+
+                <!-- Quantity -->
+                <div class="col-12">
+                  <label class="form-label-custom">Quantity</label>
+                  <div class="qty-wrap">
+                    <button type="button" class="qty-btn" onclick="changeQty(-1)">−</button>
+                    <span class="qty-display" id="qtyDisplay">1</span>
+                    <button type="button" class="qty-btn" onclick="changeQty(1)">+</button>
+                  </div>
+                </div>
+
+                <!-- Special notes -->
+                <div class="col-12">
+                  <label class="form-label-custom" for="specNotes">Special Notes</label>
+                  <textarea id="specNotes" rows="3" class="form-control custom-input"
+                    placeholder="Allergies, theme colors, reference images link…"></textarea>
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" class="btn btn-custom-submit w-100" id="customSubmitBtn">
+                    <span id="customBtnText">
+                      <i class="bi bi-bag-heart me-2"></i>Add to Order
+                    </span>
+                    <span id="customBtnSpinner" style="display:none;">
+                      <span class="spinner-border spinner-border-sm me-2"></span>Processing…
+                    </span>
+                  </button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTACT / ORDER FORM
+  ═══════════════════════════════════════ -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <p class="section-overline">Get in Touch</p>
+        <h2 class="section-title">Place Your <em>Order</em></h2>
+        <p class="section-sub">Fill in your details and our team will confirm your order within 2 hours.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8 reveal">
+          <div class="contact-card">
+
+            <!-- Success Alert -->
+            <div id="contactSuccess" class="success-alert" style="display:none;">
+              <i class="bi bi-check-circle-fill"></i>
+              <div>
+                <strong>Order Received! 🎂</strong>
+                <p>We'll WhatsApp you within 2 hours to confirm details. Thank you!</p>
+              </div>
+            </div>
+
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+
+                <div class="col-md-6">
+                  <label class="form-label-custom" for="cName">Full Name *</label>
+                  <input type="text" id="cName" class="form-control custom-input" placeholder="Your name" />
+                  <div class="err-msg" id="cNameErr">Name must be at least 2 characters.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label-custom" for="cEmail">Email *</label>
+                  <input type="email" id="cEmail" class="form-control custom-input" placeholder="you@email.com" />
+                  <div class="err-msg" id="cEmailErr">Please enter a valid email address.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label-custom" for="cPhone">Phone *</label>
+                  <input type="tel" id="cPhone" class="form-control custom-input" placeholder="+91 98765 43210" />
+                  <div class="err-msg" id="cPhoneErr">Please enter a valid 10-digit phone number.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label-custom" for="cOccasion">Occasion *</label>
+                  <select id="cOccasion" class="form-select custom-select">
+                    <option value="">— Select Occasion —</option>
+                    <option>🎉 Birthday</option>
+                    <option>💍 Wedding</option>
+                    <option>❤️ Anniversary</option>
+                    <option>🎭 Face Cake</option>
+                    <option>🏢 Corporate Event</option>
+                    <option>✨ Other</option>
+                  </select>
+                  <div class="err-msg" id="cOccasionErr">Please select an occasion.</div>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label-custom" for="cAddress">Delivery Address *</label>
+                  <input type="text" id="cAddress" class="form-control custom-input"
+                    placeholder="Full address with pincode" />
+                  <div class="err-msg" id="cAddressErr">Please enter a delivery address.</div>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label-custom" for="cMessage">Custom Details / Message</label>
+                  <textarea id="cMessage" rows="4" class="form-control custom-input"
+                    placeholder="Describe your dream cake — theme, colors, message, photo reference…"></textarea>
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" class="btn btn-contact-submit w-100" id="contactSubmitBtn">
+                    <span id="contactBtnText">
+                      <i class="bi bi-send me-2"></i>Submit Order Enquiry
+                    </span>
+                    <span id="contactBtnSpinner" style="display:none;">
+                      <span class="spinner-border spinner-border-sm me-2"></span>Sending…
+                    </span>
+                  </button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+
+        <div class="footer-brand">
+          <span class="brand-icon">✦</span>
+          <span class="brand-text">Sweet<em>Delights</em></span>
+          <p class="footer-tagline">Baked with love, delivered with joy.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#cakes">Cakes</a>
+          <a href="#custom">Custom Order</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+          <p><i class="bi bi-whatsapp me-2"></i>+91 98765 43210</p>
+          <p><i class="bi bi-envelope me-2"></i>hello@sweetdelights.in</p>
+          <p><i class="bi bi-clock me-2"></i>Mon–Sat: 9am – 9pm</p>
+        </div>
+
+        <div class="footer-socials">
+          <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" title="Pinterest"><i class="bi bi-pinterest"></i></a>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Sweet Delights Artisan Cake Studio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+       QUICK CUSTOMIZE MODAL
+  ═══════════════════════════════════════ -->
+  <div class="modal fade" id="quickModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <div class="modal-header">
+          <h5 class="modal-title" id="quickModalTitle">Customize Your Cake</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p class="modal-sub" id="quickModalSub">Occasion pre-selected for you.</p>
+          <div class="mb-3">
+            <label class="form-label-custom" for="modalFlavor">Flavour</label>
+            <select id="modalFlavor" class="form-select custom-select">
+              <option>Chocolate Truffle</option>
+              <option>Classic Vanilla</option>
+              <option>Red Velvet</option>
+              <option>Butterscotch</option>
+              <option>Mango Delight</option>
+              <option>Black Forest</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label-custom" for="modalSize">Size</label>
+            <select id="modalSize" class="form-select custom-select">
+              <option>0.5 kg — ₹599</option>
+              <option>1 kg — ₹999</option>
+              <option>1.5 kg — ₹1,399</option>
+              <option>2 kg — ₹1,699</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label-custom" for="modalMsg">Message on Cake</label>
+            <input type="text" id="modalMsg" class="form-control custom-input"
+              placeholder='e.g. "Happy Birthday!"' maxlength="40" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-hero-ghost" data-bs-dismiss="modal">Cancel</button>
+          <button class="btn btn-hero-primary" onclick="confirmModal()">
+            <i class="bi bi-check-lg me-1"></i>Confirm & Customise
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" onclick="scrollTop()" title="Back to top">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
+
+  <!-- Toast notification -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index:9999">
+    <div id="mainToast" class="toast custom-toast" role="alert">
+      <div class="toast-body" id="toastMsg"></div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
